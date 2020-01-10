@@ -1,6 +1,7 @@
-SRC?=$(shell 'pwd')/app
+help:
+    @cat Makefile
 
 build:
-	docker build -t nateraw/alpine-node-flask -f Dockerfile .
+    docker build -t nateraw/alpine-node-flask -f Dockerfile .
 start: build
-	docker run --rm -it -p 80:80 nateraw/alpine-node-flask
+    docker run --rm -it -p 80:80 nateraw/alpine-node-flask
