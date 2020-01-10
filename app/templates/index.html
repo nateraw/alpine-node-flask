@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap/dist/css/bootstrap.min.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="alert alert-success" role="alert">
+            <h2 class="alert-heading text-center">Hello, World!</h4>
+            <p>{{ msg_1 }}</p>
+            <hr>
+            <p class="mb-0">{{ msg_2 }}</p>
+        </div>
+    <div>
+    <script src="{{ url_for('static', filename='jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='popper.js/dist/umd/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap/dist/js/bootstrap.min.js') }}"></script>
+</body>
+</html>
